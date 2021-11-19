@@ -47,7 +47,7 @@
                 <div class="employeelist-sidebar-section">
                     <button class="employeelist-sidebar-btn"><i class="fas fa-bars"></i></button>
                 </div>
-                <div class="employeelist-image-section">
+                <div class="employeelist-image-section" style="display: flex;">
                     <h1>Mananjay Shrestha</h1>
                     <img src="./images/profile.jpg" alt="userimage">
                 </div>
@@ -211,12 +211,11 @@
         <div class="employeelist-adduser-form-section">
             <div class="employeelist-adduser-header">
                 <img src="./images/logo.png" alt="company logo">
-                <!-- <button class="employeelist-adduser-close-btn"><i class="fas fa-times"></i></button> -->
-
+                <button class="employeelist-adduser-close-btn"><i class="fas fa-times"></i></button>
             </div>
 
             <form action="" class="employeelist-from-section">
-                <h1>Create User</h1>
+                <h1>Create Employee</h1>
                 <div class="employeelist-firstrow-section">
                     <div class="employeelist-froms">
                         <label for="">First Name</label>
@@ -275,34 +274,12 @@
                             <input type="radio" name="gender" value="female" class="inputtyperadio"> Female &nbsp&nbsp;
                             <input type="radio" name="gender" value="other" class="inputtyperadio"> Other &nbsp&nbsp;
                         </div>
-
                     </div>
-
-                    <!-- <div class="employeelist-froms">
-                        <label for="">Salary</label>
-                        <input type="tel" class="employeelist-text-from">
-                    </div> -->
                 </div>
-
-
-                <!-- <label for="">Enter Fullname</label> -->
-                <!-- <input type="text" class="employeelist-adduser-fullname-section employeelist-form-section "> -->
-                <!-- <label for="">Username</label>
-                <input type="text" class="employeelist-adduser-username-section employeelist-form-section">
-                <label for="">Email</label>
-                <input type="text" class="employeelist-adduser-email-section employeelist-form-section">
-                <label for="">Designation</label>
-                <input type="text" class="employeelist-adduser-designation-section employeelist-form-section">
-                <div class="employeelist-accept-term-section">
-                    <input type="radio" class="employeelist-accept-term-radio">
-                    <h2>I Accept Terms And Conditions</h2>
-                </div> -->
                 <input type="submit"
                     style="display: block; margin: 1em auto 0.5em auto; font-size: 1em; width: 25%; height: 40px; cursor: pointer;  border-radius: 32px; background-color: #103f6a; color: white; "
                     class="employeelist-adduser-submit-section employeelist-form-submit-section" onclick="toast(event)">
             </form>
-
-
         </div>
         <!-- add-user section end here -->
     </div>

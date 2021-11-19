@@ -212,29 +212,57 @@
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
-        <!-- userlist-adduser-form-section -->
+
+        <!-- adduser section start here -->
         <div class="userlist-adduser-form-section">
-            <form action="">
-                <h1>Create User</h1>
+            <div class="userlist-adduser-header">
+                <img src="./images/logo.png" alt="company logo">
                 <button class="userlist-adduser-close-btn"><i class="fas fa-times"></i></button>
-                <label for="">Enter Fullname</label>
-                <input type="text" class="userlist-adduser-fullname-section userlist-form-section ">
-                <label for="">Username</label>
-                <input type="text" class="userlist-adduser-username-section userlist-form-section">
-                <label for="">Email</label>
-                <input type="text" class="userlist-adduser-email-section userlist-form-section">
-                <label for="">Designation</label>
-                <input type="text" class="userlist-adduser-designation-section userlist-form-section">
-                <div class="userlist-accept-term-section">
-                    <input type="radio" class="userlist-accept-term-radio">
-                    <h2>I Accept Terms And Conditions</h2>
+            </div>
+
+            <form action="" class="userlist-from-section">
+                <h1>Create Employee</h1>
+                <div class="userlist-firstrow-section">
+                    <div class="userlist-froms">
+                        <label for="">Employee List</label>
+                        <select name="languages" id="lang" class="userlist-text-from">
+                            <option value="javascript">Mananjay Shrestha</option>
+                            <option value="php">Dorje Hyplmo</option>
+                            <option value="java">Sujan Yonjan</option>
+                            <option value="golang">Manjil Acharya</option>
+                            <option value="python">Minal Pandit</option>
+                            <option value="c#">Pashi Sherpa</option>
+                            <option value="C++">Kushum Lamichhance</option>
+                            <option value="erlang">Anjali Neupane</option>
+                        </select>
+                    </div>
+
                 </div>
+                <div class="userlist-secondrow-section">
+                    <div class="userlist-froms">
+                        <label for="">Username</label>
+                        <input type="text" class="userlist-text-from">
+                    </div>
+                </div>
+                <div class="userlist-thirdrow-section">
+                    <div class="userlist-froms">
+                        <label for="">Password</label>
+                        <input type="password" class="userlist-text-from">
+                    </div>
+                </div>
+                <div class="userlist-fourthrow-section">
+                    <div class="userlist-froms  email">
+                        <label for="">Confirm Password</label>
+                        <input type="password" class="userlist-text-from">
+                    </div>
+                </div>
+
                 <input type="submit"
-                    style="display: block; margin: 1em auto 0.5em auto; font-size: 1em; width: 50%; height: 40px; cursor: pointer;  border-radius: 7px;"
-                    class="userlist-adduser-submit-section " onclick="toast(event)">
+                    style="display: block; margin: 1em auto 0.5em auto; font-size: 1em; width: 25%; height: 40px; cursor: pointer;  border-radius: 32px; background-color: #103f6a; color: white; "
+                    class="employeelist-adduser-submit-section employeelist-form-submit-section" onclick="toast(event)">
             </form>
         </div>
-        <!-- userlist-adduser-form-section -->
+        <!-- add-user section end here -->
     </div>
 
     <!-- userlist-toast -->

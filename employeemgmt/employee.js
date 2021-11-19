@@ -80,9 +80,9 @@ window.addEventListener("click", (e) => {
 const employeelistcreateuserbtn = document.querySelector(
   ".employeelist-create-section-btn"
 );
-// const employeelistcreateuserclosebtn = document.querySelector(
-//   ".employeelist-adduser-close-btn"
-// );
+const employeelistcreateuserclosebtn = document.querySelector(
+  ".employeelist-adduser-close-btn"
+);
 const employeelistcreateuserpopupsection = document.querySelector(
   ".employeelist-adduser-form-section"
 );
@@ -94,9 +94,9 @@ const employeelistcreateuserpopupsection = document.querySelector(
 //   employeelistcreateuserpopupsection.classList.remove("showadduser");
 // });
 
-// employeelistcreateuserclosebtn.addEventListener("click", () => {
-//   modal.style.display = "none";
-// });
+employeelistcreateuserclosebtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
 
 const modal = document.getElementById("myModal");
 
