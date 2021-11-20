@@ -288,9 +288,14 @@ input.empty {
   font-size: 1.5em;
   font-weight: bold;
 }
-.userlist-sidebar ul li:hover {
+/* .userlist-sidebar ul li:hover {
+  background-color: #467cad;
+} */
+.actives,
+.userlistsidebarbtn:hover {
   background-color: #467cad;
 }
+
 .userlist-sidebar-close-btn {
   position: absolute;
   top: 20%;
@@ -864,7 +869,11 @@ input.empty {
   font-size: 1.5em;
   font-weight: bold;
 }
-.employeelist-sidebar ul li:hover {
+
+.employeelistsidebarbtn.active {
+  background-color: #467cad;
+}
+.employeelistsidebarbtn:hover {
   background-color: #467cad;
 }
 .employeelist-sidebar-close-btn {

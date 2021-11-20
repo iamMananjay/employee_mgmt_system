@@ -116,3 +116,13 @@ let toast = (e) => {
 function newDoc() {
   window.location.assign("http://127.0.0.1:5500/login.html");
 }
+
+// edit-delete form
+
+const editbtn = document.querySelectorAll(".edit-btn");
+
+editbtn.forEach((eachbtn) => {
+  eachbtn.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+});
