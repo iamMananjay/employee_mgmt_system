@@ -435,6 +435,7 @@ input.empty {
 /* userlist-search-create-section start here */
 .userlist-create-section {
   padding: 0 1em;
+  border-radius: 7px;
 }
 .userlist-create-section-btn {
   background-color: var(--bg-color);
@@ -1016,6 +1017,7 @@ input.empty {
   padding: 0.5em;
   border: unset;
   margin-bottom: 1em;
+  border-radius: 7px;
 }
 .employeelist-search-section {
   padding: 0 1em;
@@ -1029,6 +1031,7 @@ input.empty {
   padding: 0.5em;
   border: unset;
   margin-right: 0.5em;
+  border-radius: 7px;
 }
 .employeelist-search-btn {
   font-size: 1em;
@@ -1036,6 +1039,7 @@ input.empty {
   cursor: pointer;
   background-color: var(--bg-color);
   color: white;
+  border-radius: 7px;
 }
 .employeelist-username,
 .employeelist-email,
@@ -1063,6 +1067,7 @@ input.empty {
   height: 45px;
   padding: 0.8em 0.5em;
   margin-top: 1em;
+  border-radius: 7px 7px 0px 0px;
 }
 .employeelist-firstrowlist-section {
   display: grid;
@@ -1121,6 +1126,7 @@ input.empty {
   padding: 0.5em;
   font-size: 0.8em;
   background-color: white;
+  border-radius: 0 0 7px 7px;
 }
 .employeelist-edit-delete-value {
   color: white;
@@ -1479,6 +1485,7 @@ input.empty {
     color: white;
     padding: 1em 0.5em;
     margin-top: 1em;
+    border-radius: 7px 7px 0 0;
   }
   .userlist-firstrowlist-section {
     display: grid;
@@ -1545,6 +1552,7 @@ input.empty {
     padding: 0.5em;
     font-size: 0.8em;
     background-color: white;
+    border-radius: 0px 0px 7px 7px;
   }
   .userlist-edit-delete-value {
     color: white;
