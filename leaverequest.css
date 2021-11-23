@@ -1,0 +1,102 @@
+.leaverequest-section {
+  margin: 1.5em auto;
+  padding: 0 1em;
+  width: 100%;
+  height: auto;
+  /* background-color: blanchedalmond; */
+}
+.leaverequest-title-section {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #103f6a;
+  margin-bottom: 2em;
+}
+.leaverequest-underline-section {
+  width: 12%;
+  height: 2px;
+  background-color: #103f6a;
+  display: block;
+  margin: 0 auto;
+}
+.leaverequest-main-conatiner {
+  display: grid;
+  grid-template-columns: 50% auto;
+  color: #103f6a;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.leaverequest-form-section {
+  /* background-color: rgb(255, 255, 255); */
+  height: 350px;
+  width: 100%;
+}
+.employee-name {
+  margin-bottom: 1em;
+}
+.employee-name input[type="text"] {
+  width: 70%;
+  font-size: 1em;
+  padding: 0.2em;
+  /* border-radius: 7px; */
+  margin-left: 0.5em;
+}
+.employee-designation {
+  margin-bottom: 1em;
+}
+.employee-designation input[type="text"] {
+  width: 70%;
+  font-size: 1em;
+  padding: 0.2em;
+  margin-left: 2.5em;
+}
+.leave-number {
+  margin-bottom: 1em;
+}
+.leave-number #day {
+  width: 10%;
+  font-size: 1em;
+  padding: 0.2em;
+  margin-left: 0.5em;
+}
+.leaverequest-calendar-section {
+  /* background-color: cornflowerblue; */
+  height: 350px;
+  width: 100%;
+}
+.one-day-leave-section {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-bottom: 1em;
+}
+.leave-weekday-section #weekday {
+  font-size: 1em;
+  padding: 0.2em;
+  margin-left: 1em;
+}
+.half-day-leave-section input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+.multiple-day-leave-section {
+  display: grid;
+  grid-template-columns: 50% auto;
+  margin-bottom: 1em;
+}
+.leave-start-date,
+.leave-end-date {
+  display: flex;
+  align-items: center;
+}
+.multiple-day-leave-section input[type="date"] {
+  width: 69%;
+  margin-left: 0.5em;
+  font-size: 1em;
+  padding: 0.2em;
+}
+.leaverequestsubmitbtn {
+  font-size: 1em !important ;
+  padding: 0.3em 1.5em !important ;
+  height: unset !important;
+  width: unset !important;
+}
