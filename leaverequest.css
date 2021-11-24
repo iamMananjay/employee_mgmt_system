@@ -53,16 +53,20 @@
 .leave-number {
   margin-bottom: 1em;
 }
-.leave-number #day {
+.leave-number input[type="number"] {
   width: 10%;
   font-size: 1em;
   padding: 0.2em;
   margin-left: 0.5em;
 }
-.leaverequest-calendar-section {
-  /* background-color: cornflowerblue; */
-  height: 350px;
-  width: 100%;
+.leaveday::-webkit-outer-spin-button,
+.leaveday::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.message {
+  margin-bottom: 1em;
+  display: none;
 }
 .one-day-leave-section {
   display: flex;
@@ -70,11 +74,18 @@
   width: 60%;
   margin-bottom: 1em;
 }
+.one-day-section {
+  display: none;
+  /* transition: all 0.5s ease; */
+  /* transform: translateY(500%) ; */
+}
+
 .leave-weekday-section #weekday {
   font-size: 1em;
   padding: 0.2em;
   margin-left: 1em;
 }
+
 .half-day-leave-section input[type="checkbox"] {
   margin-right: 0.5em;
 }
@@ -82,6 +93,9 @@
   display: grid;
   grid-template-columns: 50% auto;
   margin-bottom: 1em;
+}
+.multiple-day-section {
+  display: none;
 }
 .leave-start-date,
 .leave-end-date {
@@ -99,4 +113,77 @@
   padding: 0.3em 1.5em !important ;
   height: unset !important;
   width: unset !important;
+}
+
+/* leaverequest-calendar-section start*/
+
+.leaverequest-calendar-section {
+  background-color: rgb(255, 255, 255);
+  height: 350px;
+  width: 100%;
+}
+.calendar-head-section {
+  margin-bottom: 0.5em;
+  background-color: #103f6a;
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.calendar-section {
+  padding: 0em 1em;
+}
+.calendar_current_year {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+.leavedaynumber {
+  display: none;
+}
+.btn {
+  padding: 4px 0.5em;
+  background-color: unset;
+  border: unset;
+  font-size: 1em;
+  background-color: #103f6a;
+  color: white;
+}
+
+.week-0 {
+  display: grid;
+  grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3%;
+}
+
+.colweek {
+  background-color: #103f6a;
+  color: white;
+  padding: 0.4em 0.5em;
+  /* border: 1px solid rgb(73, 73, 73); */
+  display: grid;
+  place-items: center;
+}
+
+.days .row {
+  display: grid;
+  grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3%;
+}
+
+.days .col {
+  padding: 0.4em 0.5em;
+  display: grid;
+  place-items: center;
+  /* border: 1px solid rgb(73, 73, 73); */
+}
+.days .previousmonth {
+  padding: 0.4em 0.5em;
+  display: grid;
+  place-items: center;
+  /* border: 1px solid rgb(73, 73, 73); */
+}
+.col-6:last-child {
+  color: red;
 }

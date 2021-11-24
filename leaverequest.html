@@ -86,12 +86,15 @@
                 <h1>Leave Request</h1>
             </div>
 
+            <!-- leaverequest-section -->
             <div class="leaverequest-section">
                 <div class="leaverequest-title-section">
                     <p>Please fill in the from with all the information</p>
                     <div class="leaverequest-underline-section"></div>
                 </div>
+                <!-- leaverequest-main-conatiner -->
                 <div class="leaverequest-main-conatiner">
+                    <!-- leaverequest-form-section -->
                     <div class="leaverequest-form-section">
                         <form action="">
                             <div class="employee-name">
@@ -104,49 +107,88 @@
                             </div>
                             <div class="leave-number">
                                 <label for="">Total Number of days requested:</label>
-                                <select id="day">
-                                    <option value="volvo">1</option>
-                                    <option value="saab">2</option>
-                                    <option value="opel">3</option>
-                                    <option value="audi">4</option>
-                                    <option value="audi">5</option>
-                                </select>
+                                <input type="number" class="leaveday">
                             </div>
-                            <div class="one-day-leave-section">
-                                <div class="leave-weekday-section">
-                                    <label for="">Day:</label>
-                                    <select id="weekday">
-                                        <option value="volvo">Sunday</option>
-                                        <option value="saab">Monday</option>
-                                        <option value="opel">Tuesday</option>
-                                        <option value="audi">Wednesday</option>
-                                        <option value="audi">Thursday</option>
-                                        <option value="audi">Friday</option>
-                                        <option value="audi">Saturday</option>
-                                    </select>
-                                </div>
-                                <div class="half-day-leave-section">
-                                    <input type="checkbox">
-                                    <label for="">Half Day Leave</label>
-                                </div>
-                            </div>
-                            <div class="multiple-day-leave-section">
-                                <div class="leave-start-date">
-                                    <label for="">From:</label>
-                                    <input type="date">
-                                </div>
-                                <div class="leave-end-date">
-                                    <label for="">To:</label>
-                                    <input type="date">
-                                </div>
+                            <h3 class="message">Opps!! &#128517; Number of Days cannot be negative(-)</h3>
 
+                            <div class="one-day-section">
+                                <div class="one-day-leave-section ">
+                                    <div class="leave-weekday-section">
+                                        <label for="">Day:</label>
+                                        <select id="weekday">
+                                            <option value="volvo">Sunday</option>
+                                            <option value="saab">Monday</option>
+                                            <option value="opel">Tuesday</option>
+                                            <option value="audi">Wednesday</option>
+                                            <option value="audi">Thursday</option>
+                                            <option value="audi">Friday</option>
+                                            <option value="audi">Saturday</option>
+                                        </select>
+                                    </div>
+                                    <div class="half-day-leave-section ">
+                                        <input type="checkbox">
+                                        <label for="">Half Day Leave</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="multiple-day-section">
+                                <div class="multiple-day-leave-section">
+                                    <div class="leave-start-date">
+                                        <label for="">From:</label>
+                                        <input type="date">
+                                    </div>
+                                    <div class="leave-end-date">
+                                        <label for="">To:</label>
+                                        <input type="date">
+                                    </div>
+
+                                </div>
                             </div>
                             <input type="submit" class="leaverequestsubmitbtn">
                         </form>
                     </div>
-                    <div class="leaverequest-calendar-section"></div>
+                    <!-- leaverequest-form-section end -->
+
+                    <!-- leaverequest-calendar-section start-->
+                    <div class="leaverequest-calendar-section">
+
+                        <div class="calendar-head-section">
+                            <h3></h3>
+                        </div>
+
+                        <div class="calendar-section">
+                            <!-- current_year start -->
+                            <div class="calendar_current_year">
+                                <button class="btn prebtn">
+                                    <i class="fas fa-angle-left"></i>
+                                </button>
+                                <div class="leavedaynumber">
+                                    November 3 - 4
+                                </div>
+                                <button class="btn nextbtn">
+                                    <i class="fas fa-angle-right"></i>
+                                </button>
+                            </div>
+                            <!-- current_year end -->
+                            <!-- calendar_month_section start  -->
+                            <div class="calendar_month_section">
+                                <!-- current_weekend_day start -->
+                                <div class="current_weekend_day">
+                                    <div class="weekdays">
+                                    </div>
+                                    <div class="days"></div>
+                                </div>
+                                <!-- current_weekend_day end -->
+                            </div>
+                            <!-- calendar_month_section end  -->
+                        </div>
+                    </div>
+                    <!-- leaverequest-calendar-section end-->
                 </div>
+                <!-- leaverequest-main-conatiner -->
             </div>
+            <!-- leaverequest-section -->
+
         </div>
         <!-- employeelist-main-container -->
     </div>
@@ -175,8 +217,10 @@
 
 </body>
 <!-- javascript link -->
+<script src="./employeemgmt/toast.js"></script>
+<script src="./employeemgmt/leaverequest.js"></script>
 <script src="./employeemgmt/employee.js"></script>
 
-<!-- <script src="./employeemgmt/toast.js"></script> -->
+
 
 </html>
