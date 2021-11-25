@@ -135,11 +135,11 @@
                                 <div class="multiple-day-leave-section">
                                     <div class="leave-start-date">
                                         <label for="">From:</label>
-                                        <input type="date">
+                                        <input type="date" class="leavestartdatefrom">
                                     </div>
                                     <div class="leave-end-date">
                                         <label for="">To:</label>
-                                        <input type="date">
+                                        <input type="date" class="leaveenddatefrom">
                                     </div>
 
                                 </div>
@@ -153,23 +153,17 @@
                     <div class="leaverequest-calendar-section">
 
                         <div class="calendar-head-section">
+                            <button class="btn prebtn">
+                                <i class="fas fa-angle-left"></i>
+                            </button>
                             <h3></h3>
+                            <button class="btn nextbtn">
+                                <i class="fas fa-angle-right"></i>
+                            </button>
                         </div>
 
                         <div class="calendar-section">
-                            <!-- current_year start -->
-                            <div class="calendar_current_year">
-                                <button class="btn prebtn">
-                                    <i class="fas fa-angle-left"></i>
-                                </button>
-                                <div class="leavedaynumber">
-                                    November 3 - 4
-                                </div>
-                                <button class="btn nextbtn">
-                                    <i class="fas fa-angle-right"></i>
-                                </button>
-                            </div>
-                            <!-- current_year end -->
+
                             <!-- calendar_month_section start  -->
                             <div class="calendar_month_section">
                                 <!-- current_weekend_day start -->

@@ -42,26 +42,14 @@ const months = [
 // weekstart
 const weeks = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const date = new Date();
+
 const previousbtn = document.querySelector(".prebtn");
 const nextbtn = document.querySelector(".nextbtn");
 const todaydate = document.querySelector(".calendar-head-section h3");
-// const todayevent = document.querySelector(".todaydate");
 
 const monthday = document.querySelector(".days");
 
 const weekdays = document.querySelector(".weekdays");
-console.log(weekdays);
-
-// const month = document.querySelector(".monthdropbtn");
-// const year = document.querySelector(".yeardropbtn");
-
-// console.log(date);
-// console.log(previousbtn);
-// console.log(nextbtn);
-// console.log(todaydate);
-// console.log(monthday);
-// console.log(month);
-// console.log(year);
 
 window.addEventListener("DOMContentLoaded", () => {
   monthRender();
@@ -76,27 +64,21 @@ window.addEventListener("DOMContentLoaded", () => {
       createEachweek.classList.add(`colweek-${col}`);
       createEachweek.classList.add(`colweek`);
       createEachweek.textContent = weeks[col];
-
       createEachforweekday.appendChild(createEachweek);
-      // daycount++;
-      // week++;
     }
   }
 });
-
-let monthRender = () => {
+let monthinnumber = new Date().getMonth();
+let monthRender = (day, month, year) => {
+  console.log(day);
+  console.log(month);
+  console.log(year);
   monthday.innerHTML = "";
   const currentyear = date.getFullYear();
   const currentmonth = months[date.getMonth()];
   const currentdate = date.getDate();
   const currentday = date.getDay();
-  // console.log(currentyear);
-  // console.log(currentmonth);
-  // console.log(months[date.getMonth()]);
-  // const week = weeks[date.getDay()];
 
-  // month.innerHTML = `${currentmonth}`;
-  // year.innerHTML = `${currentyear}`;
   todaydate.innerHTML = ` ${currentmonth} ${currentyear}`;
 
   let lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
@@ -124,15 +106,31 @@ let monthRender = () => {
 
         createEachrow.appendChild(createEachcolumn);
 
-        if (
-          // currentdate == date.getDate() &&
-          // currentmonth == months[date.getMonth()] &&
-          // currentyear == date.getFullYear()
-          createEachcolumn.textContent ==
-          date.getDate(currentyear, currentmonth, currentday)
-        ) {
-          createEachcolumn.style.color = "#FF69B4";
+        if (currentyear == new Date().getFullYear()) {
+          if (currentmonth == months[monthinnumber]) {
+            if (
+              createEachcolumn.textContent == new Date().getDate() &&
+              currentmonth == months[monthinnumber] &&
+              currentyear == new Date().getFullYear()
+            ) {
+              createEachcolumn.style.color = "#FF69B4";
+            }
+          } else {
+            createEachcolumn.style.color = "none";
+          }
+        } else {
+          createEachcolumn.style.color = "none";
         }
+
+        if (createEachcolumn.className == "col-6 col") {
+          createEachcolumn.style.color = "red";
+        }
+
+        // if (createEachcolumn.className == "col-6 col") {
+        //   createEachcolumn.style.color = "red";
+        // }
+
+        // for(let i= ){}
 
         if (daycount >= lastDay) {
           break;
@@ -155,6 +153,27 @@ previousbtn.addEventListener("click", () => {
 
 nextbtn.addEventListener("click", () => {
   date.setMonth(date.getMonth() + 1);
+  console.log(date);
   monthRender();
 });
 // monthsectionend;
+
+const leavestartdate = document.querySelector(".leavestartdatefrom");
+const leaveenddate = document.querySelector(".leaveenddatefrom");
+
+leavestartdate.addEventListener("change", () => {
+  let startDate = leavestartdate.value.split("-");
+  startday = startDate[2];
+  startmonth = startDate[1];
+  startyear = startDate[0];
+
+  monthRender(startday, startmonth, startyear);
+});
+
+leaveenddate.addEventListener("change", () => {
+  let endDate = leaveenddate.value.split("-");
+  endday = endDate[2];
+  endmonth = endDate[1];
+  endyear = endDate[0];
+  monthRender(endday, endmonth, endyear);
+});

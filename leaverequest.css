@@ -113,6 +113,9 @@
   padding: 0.3em 1.5em !important ;
   height: unset !important;
   width: unset !important;
+  background-color: #103f6a !important;
+  color: white !important;
+  border: unset !important;
 }
 
 /* leaverequest-calendar-section start*/
@@ -123,24 +126,20 @@
   width: 100%;
 }
 .calendar-head-section {
-  margin-bottom: 0.5em;
+  /* margin-bottom: 0.5em; */
   background-color: #103f6a;
   color: white;
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  padding: 0em 1em;
   align-items: center;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
 }
 .calendar-section {
   padding: 0em 1em;
 }
-.calendar_current_year {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5em;
-}
+
 .leavedaynumber {
   display: none;
 }
@@ -148,8 +147,7 @@
   padding: 4px 0.5em;
   background-color: unset;
   border: unset;
-  font-size: 1em;
-  background-color: #103f6a;
+  font-size: 1.5em;
   color: white;
 }
 
@@ -161,7 +159,7 @@
 .colweek {
   background-color: #103f6a;
   color: white;
-  padding: 0.4em 0.5em;
+  padding: 0.6em 0.5em;
   /* border: 1px solid rgb(73, 73, 73); */
   display: grid;
   place-items: center;
@@ -173,17 +171,13 @@
 }
 
 .days .col {
-  padding: 0.4em 0.5em;
+  padding: 0.6em 0.5em;
   display: grid;
   place-items: center;
   /* border: 1px solid rgb(73, 73, 73); */
 }
 .days .previousmonth {
-  padding: 0.4em 0.5em;
+  padding: 0.6em 0.5em;
   display: grid;
   place-items: center;
-  /* border: 1px solid rgb(73, 73, 73); */
-}
-.col-6:last-child {
-  color: red;
 }
