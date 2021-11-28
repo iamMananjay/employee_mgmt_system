@@ -68,11 +68,20 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
 let monthinnumber = new Date().getMonth();
-let monthRender = (day, month, year) => {
-  console.log(day);
-  console.log(month);
-  console.log(year);
+// getTotalNoOfDays();
+
+let monthRender = (day) => {
+  let highLighMode = false;
+  let totalDays = 0;
+
+  totalDays = getTotalNoOfDays();
+
+  if (totalDays == 0 || totalDays == undefined || totalDays == "") {
+    setTotalNumberofDays();
+  }
+
   monthday.innerHTML = "";
   const currentyear = date.getFullYear();
   const currentmonth = months[date.getMonth()];
@@ -88,10 +97,12 @@ let monthRender = (day, month, year) => {
     date.getMonth(),
     1
   ).getDay();
-  // debugger;
 
   let daycount = 1;
-  for (rw = 0; rw < 5; rw++) {
+  for (rw = 0; rw < 6; rw++) {
+    if (daycount >= lastDay) {
+      break;
+    }
     const createEachrow = document.createElement("div");
     createEachrow.classList.add(`row-${rw}`);
     createEachrow.classList.add(`row`);
@@ -105,6 +116,8 @@ let monthRender = (day, month, year) => {
         createEachcolumn.classList.add(`col`);
 
         createEachrow.appendChild(createEachcolumn);
+
+        // fun(createEachcolumn);
 
         if (currentyear == new Date().getFullYear()) {
           if (currentmonth == months[monthinnumber]) {
@@ -126,11 +139,24 @@ let monthRender = (day, month, year) => {
           createEachcolumn.style.color = "red";
         }
 
-        // if (createEachcolumn.className == "col-6 col") {
-        //   createEachcolumn.style.color = "red";
-        // }
+        if (day == createEachcolumn.textContent) {
+          highLighMode = true;
+        }
 
-        // for(let i= ){}
+        if (highLighMode) {
+          if (totalDays > 0) {
+            // debugger;
+
+            createEachcolumn.style.color = "#FF1493";
+            createEachcolumn.classList.add = "from";
+            // totalNoOfDays--;
+            // localStorage.getItem(days)--;
+            // x--;
+            setTotalNumberofDays(--totalDays);
+          } else {
+            highLighMode = false;
+          }
+        }
 
         if (daycount >= lastDay) {
           break;
@@ -144,6 +170,23 @@ let monthRender = (day, month, year) => {
       }
     }
   }
+  // fun(createEachcolumn);
+};
+
+let getTotalNoOfDays = () => {
+  return localStorage.getItem("days");
+};
+
+let setTotalNumberofDays = (noOfDays) => {
+  let totalNoofDays;
+  if (noOfDays == undefined) {
+    totalNoofDays = document.querySelector(".leaveday").value;
+  } else {
+    totalNoofDays = noOfDays;
+  }
+
+  localStorage.setItem("days", totalNoofDays);
+  // totalDays = localStorage.getItem("days");
 };
 
 previousbtn.addEventListener("click", () => {
@@ -161,19 +204,22 @@ nextbtn.addEventListener("click", () => {
 const leavestartdate = document.querySelector(".leavestartdatefrom");
 const leaveenddate = document.querySelector(".leaveenddatefrom");
 
+let startday;
 leavestartdate.addEventListener("change", () => {
   let startDate = leavestartdate.value.split("-");
-  startday = startDate[2];
-  startmonth = startDate[1];
-  startyear = startDate[0];
+  startday = parseInt(startDate[2]);
+  startmonth = parseInt(startDate[1]);
+  startyear = parseInt(startDate[0]);
 
-  monthRender(startday, startmonth, startyear);
+  monthRender(startday);
 });
 
-leaveenddate.addEventListener("change", () => {
-  let endDate = leaveenddate.value.split("-");
-  endday = endDate[2];
-  endmonth = endDate[1];
-  endyear = endDate[0];
-  monthRender(endday, endmonth, endyear);
-});
+// leaveenddate.addEventListener("change", () => {
+//   let endDate = leaveenddate.value.split("-");
+//   endday = parseInt(endDate[2]);
+//   endmonth = parseInt(endDate[1]);
+//   endyear = parseInt(endDate[0]);
+//   monthRender(endday, "leaveend");
+// });
+
+// console.log(startday);

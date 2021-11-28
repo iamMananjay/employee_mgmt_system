@@ -90,20 +90,19 @@
   margin-right: 0.5em;
 }
 .multiple-day-leave-section {
-  display: grid;
-  grid-template-columns: 50% auto;
+  /* display: grid;
+  grid-template-columns: 50% auto; */
   margin-bottom: 1em;
 }
 .multiple-day-section {
   display: none;
 }
-.leave-start-date,
-.leave-end-date {
+.leave-start-date {
   display: flex;
   align-items: center;
 }
 .multiple-day-leave-section input[type="date"] {
-  width: 69%;
+  /* width: 69%; */
   margin-left: 0.5em;
   font-size: 1em;
   padding: 0.2em;
