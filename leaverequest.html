@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="./employee.css"> -->
     <link rel="stylesheet" href="./employeemgmt.css">
     <link rel="stylesheet" href="./leaverequest.css">
+    <link rel="stylesheet" href="./layout.css">
     <!-- font-awesome link -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet" />
 
@@ -17,30 +18,30 @@
 
 <body>
     <!-- employeelist-wrapper -->
-    <div class="employeelist-wrapper">
+    <div class="wrapper">
 
         <!-- employeelist-slidebar -->
-        <div class="employeelist-sidebar">
+        <div class="sidebar">
             <!-- employeelist-sidebar-company-logo-section -->
-            <div class="employeelist-sidebar-company-logo-section">
+            <div class="sidebar-company-logo-section">
                 <img src="./images/logo.png" alt="company logo">
-                <button class="employeelist-sidebar-close-btn"><i class="fas fa-times"></i></button>
+                <button class="sidebar-close-btn"><i class="fas fa-times"></i></button>
             </div>
             <!-- employeelist-sidebar-company-logo-section -->
             <ul>
-                <li class="employeelistsidebarbtn">
+                <li class="sidebarbtn">
                     <a href="user.html">
                         <i class="fas fa-users"></i>
                         <span>Userlist</span>
                     </a>
                 </li>
-                <li class="employeelistsidebarbtn ">
+                <li class="sidebarbtn">
                     <a href="employee.html">
                         <i class="fas fa-users"></i>
                         <span>Employeelist</span>
                     </a>
                 </li>
-                <li class="employeelistsidebarbtn active">
+                <li class="sidebarbtn actives">
                     <a href="leaverequest.html">
                         <i class="fas fa-users"></i>
                         <span>Leave Request</span>
@@ -50,31 +51,31 @@
         </div>
         <!-- employeelist-wrapper end here -->
         <!-- employeelist-main-container -->
-        <div class="employeelist-main-container    ">
-            <div class="employeelist-header-section">
-                <div class="employeelist-sidebar-section">
-                    <button class="employeelist-sidebar-btn"><i class="fas fa-bars"></i></button>
+        <div class="main-container">
+            <div class="main-container-header-section">
+                <div class="main-container-sidebar-section">
+                    <button class="main-container-sidebar-btn"><i class="fas fa-bars"></i></button>
                 </div>
-                <div class="employeelist-image-section" style="display: flex;">
+                <div class="main-container-image-section" style="display: flex;">
                     <h1>Mananjay Shrestha</h1>
                     <img src="./images/profile.jpg" alt="userimage">
                 </div>
             </div>
 
             <!-- logout section start -->
-            <div class="employeelist-logout-section">
+            <div class="main-container-logout-section">
                 <!-- employeelist-user-profile-img -->
-                <div class="employeelist-user-profile-img">
+                <div class="main-container-user-profile-img">
                     <img src="./images/profile.jpg" alt="userimage">
-                    <button class="employeelist-logout-section-close-btn"><i class="fas fa-times"></i></button>
+                    <button class="main-container-logout-section-close-btn"><i class="fas fa-times"></i></button>
                 </div>
                 <!-- employeelist-user-profile-img -->
 
                 <h3>Mananjay Shrestha</h3>
-                <h3 class="employeelist-user-email">Mananjaysth111@gmail.com</h3>
-                <button class="employeelist-logout-btn" onclick="newDoc()">Sign Out</button>
+                <h3 class="main-container-user-email">Mananjaysth111@gmail.com</h3>
+                <button class="main-container-logout-btn" onclick="newDoc()">Sign Out</button>
                 <!-- employeelist-logout-footer-section -->
-                <div class="employeelist-logout-footer-section">
+                <div class="main-container-logout-footer-section">
                     <h3>Privacy Policy</h3>
                 </div>
                 <!-- employeelist-logout-footer-section -->
@@ -82,7 +83,7 @@
             <!-- logout section end -->
 
             <!-- employeelist-title-section -->
-            <div class="employeelist-title-section">
+            <div class="main-container-title-section">
                 <h1>Leave Request</h1>
             </div>
 
@@ -207,6 +208,7 @@
 <script src="./employeemgmt/toast.js"></script>
 <script src="./employeemgmt/leaverequest.js"></script>
 <script src="./employeemgmt/employee.js"></script>
+<script src="./employeemgmt/layout.js"></script>
 
 
 
