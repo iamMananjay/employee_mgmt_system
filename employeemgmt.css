@@ -175,7 +175,7 @@ input.empty {
   display: flex;
   flex-direction: column;
 }
-.userlist-text-from {
+.text-from {
   width: 100%;
   font-size: 1em;
   padding: 0.5em;
@@ -183,7 +183,7 @@ input.empty {
   border-radius: 7px;
   border-color: var(--border-color);
 }
-.userlist-adduser-submit-section {
+.adduser-submit-section {
   height: 40px;
   background-color: var(--bg-color) !important;
   color: white !important ;
@@ -214,12 +214,27 @@ input.empty {
   visibility: visible;
   transform: translatex(0%);
 }
+.userlist-toast.showsuccess {
+  visibility: visible;
+  transform: translatex(0%);
+}
+.userlist-toast.showdanger {
+  visibility: visible;
+  transform: translatex(0%);
+}
 .userlist-conform-icon .toast-success-mssg {
   align-self: center;
 }
-.userlist-conform-icon {
+.userlist-conform-icon.showsuccess {
+  margin-top: 0.1em;
+
   font-size: 27px;
   color: #47d764;
+}
+.userlist-conform-icon.showdanger {
+  margin-top: 0.1em;
+  font-size: 27px;
+  color: red;
 }
 
 .toast-success-mssg p:first-child {
@@ -932,7 +947,7 @@ input.empty {
     display: flex;
     flex-direction: column;
   }
-  .userlist-text-from {
+  .text-from {
     width: 100%;
     font-size: 1em;
     padding: 0.5em;
@@ -940,7 +955,7 @@ input.empty {
     border-radius: 7px;
     border-color: var(--border-color);
   }
-  .userlist-adduser-submit-section {
+  .adduser-submit-section {
     height: 40px !important;
     display: block !important;
     background-color: var(--bg-color) !important;
@@ -1992,7 +2007,7 @@ input.empty {
     display: flex;
     flex-direction: column;
   }
-  .userlist-text-from {
+  .text-from {
     width: 100%;
     font-size: 1em;
     padding: 0.5em;

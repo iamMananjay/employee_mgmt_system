@@ -33,7 +33,7 @@
                         <span>Userlist</span>
                     </a>
                 </li>
-                <li class="sidebarbtn actives">
+                <li class="sidebarbtn ">
                     <a href="employee.html">
                         <i class="fas fa-users"></i>
                         <span>Employeelist</span>
@@ -226,52 +226,52 @@
                 <div class="employeelist-firstrow-section">
                     <div class="employeelist-froms">
                         <label for="">First Name</label>
-                        <input type="text" class="employeelist-text-from">
+                        <input type="text" class="text-from" name="firstName">
                     </div>
                     <div class="employeelist-froms">
                         <label for="">Middle Name</label>
-                        <input type="text" class="employeelist-text-from">
+                        <input type="text" class="text-from" name="middleName">
 
                     </div>
                     <div class="employeelist-froms">
                         <label for="">Last Name</label>
-                        <input type="text" class="employeelist-text-from">
+                        <input type="text" class="text-from" name="lastName">
                     </div>
                 </div>
                 <div class="employeelist-secondrow-section">
                     <div class="employeelist-froms">
                         <label for="">Username</label>
-                        <input type="text" class="employeelist-text-from">
+                        <input type="text" class="text-from" name="userName">
                     </div>
 
                     <div class="employeelist-froms">
                         <label for="">Designation</label>
-                        <input type="email" class="employeelist-text-from">
+                        <input type="email" class="text-from" name="Designation">
 
                     </div>
                     <div class="employeelist-froms">
                         <label for="">Phone Number</label>
-                        <input type="tel" class="employeelist-text-from">
+                        <input type="tel" class="text-from" name="Phonenumber">
                     </div>
                 </div>
                 <div class="employeelist-thirdrow-section">
                     <div class="employeelist-froms">
                         <label for="">Address</label>
-                        <input type="text" class="employeelist-text-from">
+                        <input type="text" class="text-from" name="address">
                     </div>
                     <div class="employeelist-froms">
                         <label for="">Salary</label>
-                        <input type="tel" class="employeelist-text-from">
+                        <input type="tel" class="text-from" name="salary">
                     </div>
                     <div class="employeelist-froms birthday">
                         <label for="">DOB</label>
-                        <input type="date" class="employeelist-text-from">
+                        <input type="date" class="text-from" name="dob">
                     </div>
                 </div>
                 <div class="employeelist-fourthrow-section">
                     <div class="employeelist-froms  email">
                         <label for="">Email</label>
-                        <input type="email" class="employeelist-text-from">
+                        <input type="email" class="employeelist-text-from" name="email">
                     </div>
                     <div class="employeelist-froms  gender">
                         <label for="">Gender</label>
@@ -286,27 +286,13 @@
                 <!-- <input type="submit"
                     style="display: block; margin: 1em auto 0.5em auto; font-size: 1em; width: 25%; height: 40px; cursor: pointer;  border-radius: 32px; background-color: #103f6a; color: white; "
                     class="employeelist-adduser-submit-section employeelist-form-submit-section" onclick="toast(event)"> -->
-                <input type="submit" class="employeelist-adduser-submit-section employeelist-form-submit-section"
-                    onclick="toast(event)">
+                <input type="submit" class="adduser-submit-section employeelist-form-submit-section">
             </form>
         </div>
         <!-- add-user section end here -->
     </div>
 
-    <!-- userlist-toast -->
-    <div class="employeelist-toast">
-        <div class="employeelist-conform-icon">
-            <i class="fas fa-check-circle"></i>
-        </div>
-        <div class="employeelist-toast-success-mssg">
-            <p>Employee</p>
-            <p>Create Successfully</p>
-        </div>
-        <button class="employeelist-toast-close-btn ">
-            &times;
-        </button>
-    </div>
-    <!-- userlist-toast -->
+
 
 
 
@@ -316,6 +302,6 @@
 <script src="./employeemgmt/employee.js"></script>
 <script src="./employeemgmt/layout.js"></script>
 
-<!-- <script src="./employeemgmt/toast.js"></script> -->
+<script src="./employeemgmt/toast.js"></script>
 
 </html>

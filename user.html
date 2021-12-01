@@ -27,7 +27,7 @@
             <!-- userlist-sidebar-company-logo-section end here -->
             <!-- sidebar menu list start here -->
             <ul>
-                <li class="sidebarbtn actives">
+                <li class="sidebarbtn ">
                     <a href="user.html">
                         <i class="fas fa-users"></i>
                         <span>Userlist</span>
@@ -227,12 +227,12 @@
                 <button class="userlist-adduser-close-btn"><i class="fas fa-times"></i></button>
             </div>
 
-            <form action="" class="userlist-from-section">
+            <form action="" class="userlist-from-section" id="createUserform">
                 <h1>Create User</h1>
                 <div class="userlist-firstrow-section">
                     <div class="userlist-froms">
                         <label for="">Employee List</label>
-                        <select name="languages" id="lang" class="userlist-text-from">
+                        <select name="languages" id="lang" class="text-from">
                             <option value="javascript">Mananjay Shrestha</option>
                             <option value="php">Dorje Hyplmo</option>
                             <option value="java">Sujan Yonjan</option>
@@ -247,45 +247,30 @@
                 <div class="userlist-secondrow-section">
                     <div class="userlist-froms">
                         <label for="">Username</label>
-                        <input type="text" class="userlist-text-from">
+                        <input type="text" name="UserName" class="text-from ">
                     </div>
                 </div>
                 <div class="userlist-thirdrow-section">
                     <div class="userlist-froms">
                         <label for="">Password</label>
-                        <input type="password" class="userlist-text-from">
+                        <input type="password" name="password" class="text-from">
                     </div>
                 </div>
                 <div class="userlist-fourthrow-section">
                     <div class="userlist-froms  email">
                         <label for="">Confirm Password</label>
-                        <input type="password" class="userlist-text-from">
+                        <input type="password" name="Confirmpassword" class="text-from">
                     </div>
                 </div>
-                <input type="submit" class="userlist-adduser-submit-section userlist-form-submit-section"
-                    onclick="toast(event)">
+                <input type="submit" class="adduser-submit-section userlist-form-submit-section">
             </form>
         </div>
         <!-- add-user section end here -->
     </div>
-
-    <!-- userlist-toast -->
-    <div class="userlist-toast">
-        <div class="userlist-conform-icon">
-            <i class="fas fa-check-circle"></i>
-        </div>
-        <div class="toast-success-mssg">
-            <p>User</p>
-            <p>Create Successfully</p>
-        </div>
-        <button class="toast-close-btn ">
-            &times;
-        </button>
-    </div>
-    <!-- userlist-toast -->
 </body>
 <!-- javascript link -->
 <script src="./employeemgmt/user.js"></script>
 <script src="./employeemgmt/layout.js"></script>
+<script src="./employeemgmt/toast.js"></script>
 
 </html>

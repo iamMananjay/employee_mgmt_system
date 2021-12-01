@@ -55,6 +55,29 @@ window.addEventListener("click", (e) => {
   }
 });
 
+const sidebarActiveSection = document.querySelectorAll(".sidebarbtn");
+sidebarActiveSection.forEach((eachList) => {
+  console.log(eachList);
+  eachList.addEventListener("click", (e) => {
+    console.log(e.target);
+    // if (e.target.classList == "actives") {
+    //   e.target.classList.remove("actives");
+    // } else {
+    //   e.target.classList.add("activess");
+    // }
+    // if (e.target.classList.contains("actives")) {
+    //   e.target.classList.remove("actives");
+    // } else {
+    //   e.target.classList.add("actives");
+    // }
+    // if (this.classList.contains("actives")) {
+    //   this.classList.remove("actives");
+    // } else this.classList.add("actives");
+  });
+  // eachList.addEventListener("click", (ev) => {
+  //   console.log(ev.target);
+  // });
+});
 // function for sigout
 function newDoc() {
   window.location.assign("http://127.0.0.1:5500/login.html");

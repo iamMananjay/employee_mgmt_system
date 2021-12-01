@@ -44,22 +44,22 @@ window.onclick = function (event) {
 };
 // userlist-toast-section
 
-const userlisttoast = document.querySelector(".userlist-toast");
-const userlisttoastclose = document.querySelector(".toast-close-btn");
+// const userlisttoast = document.querySelector(".userlist-toast");
+// const userlisttoastclose = document.querySelector(".toast-close-btn");
 
-userlisttoastclose.addEventListener("click", () => {
-  userlisttoast.classList.remove("showtoast");
-});
-let toast = (e) => {
-  e.preventDefault();
-  modal.style.display = "none";
+// userlisttoastclose.addEventListener("click", () => {
+//   userlisttoast.classList.remove("showtoast");
+// });
+// let toast = (e) => {
+//   e.preventDefault();
+//   modal.style.display = "none";
 
-  function fun() {
-    userlisttoast.classList.remove("showtoast");
-  }
-  userlisttoast.classList.add("showtoast");
-  setTimeout(fun, 3000);
-};
+//   function fun() {
+//     userlisttoast.classList.remove("showtoast");
+//   }
+//   userlisttoast.classList.add("showtoast");
+//   setTimeout(fun, 3000);
+// };
 
 // edit-delete form
 
