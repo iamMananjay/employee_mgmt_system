@@ -91,11 +91,11 @@ input.empty {
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
-.userlist-adduser-form-section h1 {
+.adduser-form-section h1 {
   margin-bottom: 0.5em;
   font-size: 1.6em;
 }
-.userlist-adduser-form-section {
+.adduser-form-section {
   position: relative;
   height: auto;
   width: calc(100% - 10%);
@@ -168,7 +168,7 @@ input.empty {
   margin: 0 0.5em;
   width: 100%;
 }
-.userlist-adduser-form-section label {
+.adduser-form-section label {
   font-size: 0.9em;
 }
 .userlist-froms {
@@ -863,11 +863,11 @@ input.empty {
   /* add-user section start here */
   /* new from */
 
-  .userlist-adduser-form-section h1 {
+  .adduser-form-section h1 {
     margin-bottom: 0.5em;
     font-size: 1.6em;
   }
-  .userlist-adduser-form-section {
+  .adduser-form-section {
     position: relative;
     height: 470px;
     width: calc(100% - 50%);
@@ -940,7 +940,7 @@ input.empty {
     margin: 0 0.5em;
     width: 100%;
   }
-  .userlist-adduser-form-section label {
+  .adduser-form-section label {
     font-size: 0.9em;
   }
   .userlist-froms {
@@ -966,7 +966,7 @@ input.empty {
     font-size: 1em !important;
   }
 
-  .userlist-adduser-form-section.showfullwidthfromsection {
+  .adduser-form-section.showfullwidthfromsection {
     width: calc(100% - 75%);
     margin: 0 37.5%;
   }
@@ -1509,7 +1509,7 @@ input.empty {
     transition: all 0.5s ease;
   }
 
-  .userlist-adduser-form-section {
+  .adduser-form-section {
     position: relative;
     height: 470px;
     width: calc(100% - 60%);
@@ -1525,7 +1525,7 @@ input.empty {
     animation-name: animatetop;
     animation-duration: 0.4s;
   }
-  .userlist-adduser-form-section.showfullwidthfromsection {
+  .adduser-form-section.showfullwidthfromsection {
     width: calc(100% - 60%);
     margin: 0 30%;
   }
@@ -1825,7 +1825,7 @@ input.empty {
   /*------------------------------------------ userlist 1200px css start here -----------------------------------------*/
 
   /* add-user section start here */
-  .userlist-adduser-form-section {
+  .adduser-form-section {
     position: relative;
     height: 470px;
     width: calc(100% - 65%);
@@ -1842,7 +1842,7 @@ input.empty {
     animation-duration: 0.4s;
   }
 
-  .userlist-adduser-form-section.showfullwidthfromsection {
+  .adduser-form-section.showfullwidthfromsection {
     width: calc(100% - 65%);
     margin: 0 32.5%;
   }
@@ -1923,11 +1923,11 @@ input.empty {
   /* add-user section start here */
   /* new from */
 
-  .userlist-adduser-form-section h1 {
+  .adduser-form-section h1 {
     margin-bottom: 0.5em;
     font-size: 1.6em;
   }
-  .userlist-adduser-form-section {
+  .adduser-form-section {
     position: relative;
     height: 470px;
     width: calc(100% - 75%);
@@ -2000,7 +2000,7 @@ input.empty {
     margin: 0 0.5em;
     width: 100%;
   }
-  .userlist-adduser-form-section label {
+  .adduser-form-section label {
     font-size: 0.9em;
   }
   .userlist-froms {
@@ -2016,7 +2016,7 @@ input.empty {
     border-color: var(--border-color);
   }
 
-  .userlist-adduser-form-section.showfullwidthfromsection {
+  .adduser-form-section.showfullwidthfromsection {
     width: calc(100% - 75%);
     margin: 0 37.5%;
   }

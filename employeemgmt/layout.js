@@ -57,9 +57,9 @@ window.addEventListener("click", (e) => {
 
 const sidebarActiveSection = document.querySelectorAll(".sidebarbtn");
 sidebarActiveSection.forEach((eachList) => {
-  console.log(eachList);
+  // console.log(eachList);
   eachList.addEventListener("click", (e) => {
-    console.log(e.target);
+    // console.log(e.target);
     // if (e.target.classList == "actives") {
     //   e.target.classList.remove("actives");
     // } else {
@@ -82,3 +82,15 @@ sidebarActiveSection.forEach((eachList) => {
 function newDoc() {
   window.location.assign("http://127.0.0.1:5500/login.html");
 }
+
+const sidebarbtn = document.querySelector(".main-container-sidebar-btn");
+const sidebarsection = document.querySelector(".sidebar");
+const userlist = document.querySelector(".main-container");
+const sidebarclosebtn = document.querySelector(".sidebar-close-btn");
+
+sidebarbtn.addEventListener("click", () => {
+  sidebarsection.classList.toggle("showsidebar");
+  sidebarsection.classList.toggle("hide");
+  userlist.classList.toggle("active");
+  sidebarbtn.classList.toggle("sidebarOpen");
+});
