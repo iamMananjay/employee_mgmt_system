@@ -55,29 +55,6 @@ window.addEventListener("click", (e) => {
   }
 });
 
-const sidebarActiveSection = document.querySelectorAll(".sidebarbtn");
-sidebarActiveSection.forEach((eachList) => {
-  // console.log(eachList);
-  eachList.addEventListener("click", (e) => {
-    // console.log(e.target);
-    // if (e.target.classList == "actives") {
-    //   e.target.classList.remove("actives");
-    // } else {
-    //   e.target.classList.add("activess");
-    // }
-    // if (e.target.classList.contains("actives")) {
-    //   e.target.classList.remove("actives");
-    // } else {
-    //   e.target.classList.add("actives");
-    // }
-    // if (this.classList.contains("actives")) {
-    //   this.classList.remove("actives");
-    // } else this.classList.add("actives");
-  });
-  // eachList.addEventListener("click", (ev) => {
-  //   console.log(ev.target);
-  // });
-});
 // function for sigout
 function newDoc() {
   window.location.assign("http://127.0.0.1:5500/login.html");
@@ -93,4 +70,25 @@ sidebarbtn.addEventListener("click", () => {
   sidebarsection.classList.toggle("hide");
   userlist.classList.toggle("active");
   sidebarbtn.classList.toggle("sidebarOpen");
+});
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+const sidebarlist = document.querySelectorAll(".sidelink");
+console.log(sidebarlist);
+sidebarlist.forEach((a) => {
+  console.log(a);
 });

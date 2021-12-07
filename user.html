@@ -24,28 +24,45 @@
                 <img src="./images/logo.png" alt="company logo">
                 <button class="sidebar-close-btn"><i class="fas fa-times"></i></button>
             </div>
-            <!-- userlist-sidebar-company-logo-section end here -->
-            <!-- sidebar menu list start here -->
-            <ul>
-                <li class="sidebarbtn ">
-                    <a href="user.html">
-                        <i class="fas fa-users"></i>
-                        <span>Userlist</span>
-                    </a>
-                </li>
-                <li class="sidebarbtn">
-                    <a href="employee.html">
-                        <i class="fas fa-users"></i>
-                        <span>Employeelist</span>
-                    </a>
-                </li>
-                <li class="sidebarbtn ">
-                    <a href="leaverequest.html">
-                        <i class="fas fa-users"></i>
-                        <span>Leave Request</span>
-                    </a>
-                </li>
-            </ul>
+
+            <!-- <div class="sidenav"> -->
+            <button class="dropdown-btn sidelink">
+                <i class="fas fa-users"></i>
+                User
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container ">
+                <a href="user.html">UserList</a>
+                <a href="#">User Profile</a>
+                <a href="#">User Account</a>
+                <a href="#">User Status</a>
+                <a href="#">User Request</a>
+                <a href="#">User Detail</a>
+            </div>
+            <button class="dropdown-btn sidelink">
+                <i class="fas fa-users"></i>
+                Employee
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="employee.html">Employeelist</a>
+                <a href="#">Employee Profile</a>
+                <a href="#">Employee Account</a>
+                <a href="#">Employee Status</a>
+                <a href="#">Employee Request</a>
+                <a href="#">Employee Detail</a>
+                <a href="#">Employee Statement</a>
+            </div>
+            <a href="leaverequest.html"> Leave Request</a>
+            <a href="holiday.html" class="sidelink">Holiday</a>
+
+            <!-- </div> -->
+
+
+
+
+
+
             <!-- sidebar menu list end here -->
         </div>
         <!-- userlist-sidebar end here -->

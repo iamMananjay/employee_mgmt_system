@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <!-- <link rel="stylesheet" href="./user.css"> -->
+    <link rel="stylesheet" href="./employeemgmt.css">
+    <link rel="stylesheet" href="./layout.css">
+    <!-- font-awesome link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet" />
+    <title>userlist</title>
+</head>
+
+<body>
+    <!-- userlist-wrapper start -->
+    <div class="wrapper">
+        <!-- userlist-sidebar start here -->
+        <div class="sidebar ">
+            <!-- userlist-sidebar-company-logo-section start here -->
+            <div class="sidebar-company-logo-section">
+                <img src="./images/logo.png" alt="company logo">
+                <button class="sidebar-close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <!-- <div class="sidenav"> -->
+            <button class="dropdown-btn">User
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="user.html">UserList</a>
+                <a href="#">User Profile</a>
+                <a href="#">User Account</a>
+                <a href="#">User Status</a>
+                <a href="#">User Request</a>
+                <a href="#">User Detail</a>
+
+            </div>
+            <button class="dropdown-btn">Employee
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="employee.html">Employeelist</a>
+                <a href="#">Employee Profile</a>
+                <a href="#">Employee Account</a>
+                <a href="#">Employee Status</a>
+                <a href="#">Employee Request</a>
+                <a href="#">Employee Detail</a>
+                <a href="#">Employee Statement</a>
+
+
+            </div>
+            <a href="leaverequest.html"> Leave Request</a>
+            <a href="holiday.html">Holiday</a>
+
+            <!-- </div> -->
+
+
+
+
+
+            <!-- sidebar menu list end here -->
+        </div>
+        <!-- userlist-sidebar end here -->
+        <!-- userlist-main-container start here  -->
+        <div class="main-container">
+            <!-- userlist-header-section start here -->
+            <div class="main-container-header-section">
+                <!-- userlist-sidebar-section start here -->
+                <div class="main-container-sidebar-section">
+                    <button class="main-container-sidebar-btn sidebarOpen"><i class="fas fa-bars"></i></button>
+                </div>
+                <!-- userlist-sidebar-section end here -->
+                <!-- userlist-image-section start here -->
+                <div class="main-container-image-section">
+                    <h1>Mananjay Shrestha</h1>
+                    <img src="./images/profile.jpg" alt="userimage">
+                </div>
+                <!-- userlist-image-section end here -->
+            </div>
+            <!-- userlist-header-section end here -->
+            <!-- logout section start -->
+            <div class="main-container-logout-section">
+                <!-- userlist-user-profile-img start here -->
+                <div class="main-container-user-profile-img">
+                    <img src="./images/profile.jpg" alt="userimage">
+                    <button class="main-container-logout-section-close-btn"><i class="fas fa-times"></i></button>
+                </div>
+                <!-- userlist-user-profile-img start here -->
+                <h3>Mananjay Shrestha</h3>
+                <h3 class="main-container-user-email">Mananjaysth111@gmail.com</h3>
+                <button class="main-container-logout-btn" onclick="newDoc()">Sign Out</button>
+                <!-- userlist-logout-footer-section start here -->
+                <div class="main-container-logout-footer-section">
+                    <h3>Privacy Policy</h3>
+                </div>
+                <!-- userlist-logout-footer-section end here -->
+            </div>
+            <!-- logout section end -->
+            <!-- userlist-title-section start here -->
+            <div class="main-container-title-section">
+                <h1>User List</h1>
+            </div>
+            <div class="main-container-holiday-section">
+                <div class="holiday-section-wrapper">
+                    <div class="holiday-form-section">
+                        <div class="holiday-form-section-logo">
+                            <img src="./images/logo.png" alt="company logo">
+                        </div>
+                        <form action="">
+                            <div class="holiday-name">
+                                <Label>Holiday Name:</Label>
+                                <input type="text">
+                            </div>
+                            <div class="holiday-date">
+                                <label for="">Date:</label>
+                                <input type="date">
+                            </div>
+
+                            <input type="submit" class="holidaysubmitbtn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- userlist-main-container end here  -->
+
+    </div>
+    <!-- userlist-wrapper start -->
+
+</body>
+<!-- javascript link -->
+<!-- <script src="./employeemgmt/user.js"></script> -->
+<script src="./employeemgmt/layout.js"></script>
+<!-- <script src="./employeemgmt/toast.js"></script> -->
+
+</html>

@@ -25,27 +25,38 @@
                 <img src="./images/logo.png" alt="company logo">
                 <button class="sidebar-close-btn"><i class="fas fa-times"></i></button>
             </div>
-            <!-- employeelist-sidebar-company-logo-section -->
-            <ul>
-                <li class="sidebarbtn">
-                    <a href="user.html">
-                        <i class="fas fa-users"></i>
-                        <span>Userlist</span>
-                    </a>
-                </li>
-                <li class="sidebarbtn ">
-                    <a href="employee.html">
-                        <i class="fas fa-users"></i>
-                        <span>Employeelist</span>
-                    </a>
-                </li>
-                <li class="sidebarbtn">
-                    <a href="leaverequest.html">
-                        <i class="fas fa-users"></i>
-                        <span>Leave Request</span>
-                    </a>
-                </li>
-            </ul>
+            <!-- <div class="sidenav"> -->
+            <button class="dropdown-btn">User
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="user.html">UserList</a>
+                <a href="#">User Profile</a>
+                <a href="#">User Account</a>
+                <a href="#">User Status</a>
+                <a href="#">User Request</a>
+                <a href="#">User Detail</a>
+
+            </div>
+            <button class="dropdown-btn">Employee
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="employee.html">Employeelist</a>
+                <a href="#">Employee Profile</a>
+                <a href="#">Employee Account</a>
+                <a href="#">Employee Status</a>
+                <a href="#">Employee Request</a>
+                <a href="#">Employee Detail</a>
+                <a href="#">Employee Statement</a>
+
+
+            </div>
+            <a href="leaverequest.html"> Leave Request</a>
+            <a href="holiday.html">Holiday</a>
+
+            <!-- </div> -->
+
         </div>
         <!-- employeelist-wrapper end here -->
         <!-- employeelist-main-container -->
@@ -283,9 +294,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <input type="submit"
-                    style="display: block; margin: 1em auto 0.5em auto; font-size: 1em; width: 25%; height: 40px; cursor: pointer;  border-radius: 32px; background-color: #103f6a; color: white; "
-                    class="employeelist-adduser-submit-section employeelist-form-submit-section" onclick="toast(event)"> -->
+
                 <input type="submit" class="adduser-submit-section employeelist-form-submit-section">
             </form>
         </div>
