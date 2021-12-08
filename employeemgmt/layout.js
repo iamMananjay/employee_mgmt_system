@@ -72,11 +72,16 @@ sidebarbtn.addEventListener("click", () => {
   sidebarbtn.classList.toggle("sidebarOpen");
 });
 
-var dropdown = document.getElementsByClassName("dropdown-btn");
+// sidenav-container
+
+const sidenavHeader = document.getElementsByClassName("sidenav-header");
+const sidenavsubHeader = document.querySelectorAll(".sidenav-subheader a");
+console.log(sidenavsubHeader[0].innerHTML);
+
 var i;
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function () {
+for (i = 0; i < sidenavHeader.length; i++) {
+  sidenavHeader[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var dropdownContent = this.nextElementSibling;
     if (dropdownContent.style.display === "block") {
@@ -87,8 +92,37 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
-const sidebarlist = document.querySelectorAll(".sidelink");
-console.log(sidebarlist);
-sidebarlist.forEach((a) => {
-  console.log(a);
+let retrievedData = localStorage.getItem("achorKey");
+let retrievedsideNavSubHeadValue = JSON.parse(retrievedData);
+console.log(retrievedsideNavSubHeadValue[1]);
+
+let allAchorValue = [];
+sidenavsubHeader.forEach((eachAnchorTag) => {
+  allAchorValue = [...allAchorValue, eachAnchorTag.innerHTML];
 });
+console.log(allAchorValue);
+
+let setEachsideNavSubHeadValue = () => {
+  localStorage.setItem("achorKey", JSON.stringify(allAchorValue));
+};
+
+setEachsideNavSubHeadValue();
+
+const eachTag = document.getElementsByTagName("a");
+eachTag.forEach((e) => {
+  console.log(e);
+});
+console.log(eachTag);
+
+// eachAnchorTag.addEventListener("click", (e) => {
+//   for (let i = 0; i < retrievedsideNavSubHeadValue.length; i++) {
+//     if (retrievedsideNavSubHeadValue[i].innerHTML === e.target.innerHTML) {
+//       // if(){}
+//       sidenavsubHeader[i].classList.add = "active";
+//     }
+//     // else {
+
+//     // }
+//     console.log(e.target);
+//   }
+// });
