@@ -294,7 +294,7 @@ input.empty {
 /* user list  header section end here */
 
 /* userlist-firstrowlist-section start here */
-.userlist-firstrowlist-section {
+.userlist-rowlist-section {
   display: grid;
   grid-template-columns: 50% 50%;
   color: black;
@@ -307,71 +307,12 @@ input.empty {
   display: flex;
   align-items: center;
 }
+.userlist-rowlist-section:nth-child(odd) {
+  background-color: white;
+}
 /* userlist-firstrowlist-section end here */
 
 /* userlist-secondrowlist-section start here */
-
-.userlist-secondrowlist-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  background-color: white;
-  color: black;
-  height: 45px;
-  padding: 0.5em;
-  font-size: 0.8em;
-}
-/* userlist-secondrowlist-section end here */
-
-/* userlist-thirdrowlist-section start here */
-
-.userlist-thirdrowlist-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  color: black;
-  height: 45px;
-  padding: 0.5em;
-  font-size: 0.8em;
-  border: 1px solid #bebbbb;
-}
-/* userlist-thirdrowlist-section end here */
-
-/* userlist-fourthrowlist-section start here */
-
-.userlist-fouthrowlist-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  background-color: white;
-  color: black;
-  height: 45px;
-  padding: 0.5em;
-  font-size: 0.8em;
-}
-/* userlist-fourthrowlist-section end here */
-
-/* userlist-fifthrowlist-section start here */
-.userlist-fifthrowlist-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  color: black;
-  height: 45px;
-  padding: 0.5em;
-  font-size: 0.8em;
-  border: 1px solid #bebbbb;
-}
-/* userlist-fifthrowlist-section end here */
-
-/* userlist-sixthrowlist-section start here */
-
-.userlist-sixthrowlist-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  color: black;
-  height: 45px;
-  padding: 0.5em;
-  font-size: 0.8em;
-  background-color: white;
-}
-/* userlist-sixthrowlist-section end here */
 
 /* userlist-edit-delete-value start here*/
 .userlist-edit-delete-value {
@@ -407,11 +348,9 @@ input.empty {
   display: flex;
   justify-content: space-between;
   margin-top: 1em;
+  /* background-color: wheat; */
 }
-.userlist-page-change-section p {
-  font-size: 0.8em;
-  font-weight: lighter;
-}
+
 .userlist-previous-page-section {
   display: flex;
   place-items: center;
@@ -665,7 +604,7 @@ input.empty {
   margin-top: 1em;
   border-radius: 7px 7px 0px 0px;
 }
-.employeelist-firstrowlist-section {
+.employeelist-rowlist-section {
   display: grid;
   grid-template-columns: 50% 50%;
   color: black;
@@ -678,52 +617,10 @@ input.empty {
   display: flex;
   align-items: center;
 }
-.employeelist-secondrowlist-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
+.employeelist-rowlist-section:nth-child(odd) {
   background-color: white;
-  color: black;
-  height: 45px;
-  padding: 0.5em;
-  font-size: 0.8em;
 }
-.employeelist-thirdrowlist-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  color: black;
-  height: 45px;
-  padding: 0.5em;
-  font-size: 0.8em;
-  border: 1px solid #bebbbb;
-}
-.employeelist-fouthrowlist-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  background-color: white;
-  color: black;
-  height: 45px;
-  padding: 0.5em;
-  font-size: 0.8em;
-}
-.employeelist-fifthrowlist-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  color: black;
-  height: 45px;
-  padding: 0.5em;
-  font-size: 0.8em;
-  border: 1px solid #bebbbb;
-}
-.employeelist-sixthrowlist-section {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  color: black;
-  height: 45px;
-  padding: 0.5em;
-  font-size: 0.8em;
-  background-color: white;
-  border-radius: 0 0 7px 7px;
-}
+
 .employeelist-edit-delete-value {
   color: white;
   display: grid;
@@ -755,10 +652,7 @@ input.empty {
   justify-content: space-between;
   margin-top: 1em;
 }
-.employeelist-page-change-section p {
-  font-size: 0.8em;
-  font-weight: lighter;
-}
+
 .employeelist-previous-page-section {
   display: flex;
   place-items: center;
@@ -1130,7 +1024,7 @@ input.empty {
     margin-top: 1em;
     border-radius: 7px 7px 0 0;
   }
-  .userlist-firstrowlist-section {
+  .userlist-rowlist-section {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     color: black;
@@ -1151,52 +1045,7 @@ input.empty {
     display: flex;
     align-items: center;
   }
-  .userlist-secondrowlist-section {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    background-color: white;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-  }
-  .userlist-thirdrowlist-section {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-    border: 1px solid #bebbbb;
-  }
-  .userlist-fouthrowlist-section {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    background-color: white;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-  }
-  .userlist-fifthrowlist-section {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-    border: 1px solid #bebbbb;
-  }
-  .userlist-sixthrowlist-section {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-    background-color: white;
-    border-radius: 0px 0px 7px 7px;
-  }
+
   .userlist-edit-delete-value {
     color: white;
     display: grid;
@@ -1224,7 +1073,7 @@ input.empty {
   /* userlist page change section start */
 
   .userlist-page-change-section {
-    width: 40%;
+    width: 15%;
     margin: 1em auto;
   }
   /* userlist page change section end */
@@ -1448,7 +1297,7 @@ input.empty {
     padding: 1em 0.5em;
     margin-top: 1em;
   }
-  .employeelist-firstrowlist-section {
+  .employeelist-rowlist-section {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     color: black;
@@ -1469,51 +1318,7 @@ input.empty {
     display: flex;
     align-items: center;
   }
-  .employeelist-secondrowlist-section {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    background-color: white;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-  }
-  .employeelist-thirdrowlist-section {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-    border: 1px solid #bebbbb;
-  }
-  .employeelist-fouthrowlist-section {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    background-color: white;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-  }
-  .employeelist-fifthrowlist-section {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-    border: 1px solid #bebbbb;
-  }
-  .employeelist-sixthrowlist-section {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-    background-color: white;
-  }
+
   .employeelist-edit-delete-value {
     color: white;
     display: grid;
@@ -1552,7 +1357,7 @@ input.empty {
   }
 
   .employeelist-page-change-section {
-    width: 40%;
+    width: 15%;
     margin: 1em auto;
   }
   /* employeelist page change section end */
@@ -1699,7 +1504,7 @@ input.empty {
     padding: 1em 0.5em;
     margin-top: 1em;
   }
-  .userlist-firstrowlist-section {
+  .userlist-rowlist-section {
     display: grid;
     grid-template-columns: 20% 20% 25% 15% 20%;
     color: black;
@@ -1725,51 +1530,6 @@ input.empty {
     align-items: center;
   }
 
-  .userlist-secondrowlist-section {
-    display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
-    background-color: white;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-  }
-  .userlist-thirdrowlist-section {
-    display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-    border: 1px solid #bebbbb;
-  }
-  .userlist-fouthrowlist-section {
-    display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
-    background-color: white;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-  }
-  .userlist-fifthrowlist-section {
-    display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-    border: 1px solid #bebbbb;
-  }
-  .userlist-sixthrowlist-section {
-    display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-    background-color: white;
-  }
   .userlist-edit-delete-value {
     color: white;
     display: grid;
@@ -1865,7 +1625,7 @@ input.empty {
     padding: 1em 0.5em;
     margin-top: 1em;
   }
-  .employeelist-firstrowlist-section {
+  .employeelist-rowlist-section {
     display: grid;
     grid-template-columns: 20% 20% 25% 15% 20%;
     color: black;
@@ -1891,51 +1651,6 @@ input.empty {
     align-items: center;
   }
 
-  .employeelist-secondrowlist-section {
-    display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
-    background-color: white;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-  }
-  .employeelist-thirdrowlist-section {
-    display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-    border: 1px solid #bebbbb;
-  }
-  .employeelist-fouthrowlist-section {
-    display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
-    background-color: white;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-  }
-  .employeelist-fifthrowlist-section {
-    display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-    border: 1px solid #bebbbb;
-  }
-  .employeelist-sixthrowlist-section {
-    display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
-    color: black;
-    height: 50px;
-    padding: 0.5em;
-    font-size: 0.8em;
-    background-color: white;
-  }
   .employeelist-edit-delete-value {
     color: white;
     display: grid;
