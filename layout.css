@@ -53,24 +53,24 @@
   outline: none;
 }
 
-/* .sidenav-subheader a:hover,
-.sidenav-header:hover {
+.sidenav-subheader a:hover,
+.sidenav-header:hover,
+.sidenav-container a:hover {
   background-color: #0c4f8f;
-} */
+}
 
 /* Add an active class to the active dropdown button */
 
-.active {
+.active,
+a.active {
   background-color: #0c4f8f;
+  /* background-color: red; */
 }
-/* .sidelink.active {
-  background-color: #0c4f8f;
-} */
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .sidenav-subheader {
   display: none;
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
   padding-left: 8px;
 }
 .sidenav-subheader a {

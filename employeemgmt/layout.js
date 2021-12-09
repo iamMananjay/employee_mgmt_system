@@ -75,8 +75,7 @@ sidebarbtn.addEventListener("click", () => {
 // sidenav-container
 
 const sidenavHeader = document.getElementsByClassName("sidenav-header");
-const sidenavsubHeader = document.querySelectorAll(".sidenav-subheader a");
-console.log(sidenavsubHeader[0].innerHTML);
+// console.log(sidenavsubHeader[0].innerHTML);
 
 var i;
 
@@ -92,37 +91,72 @@ for (i = 0; i < sidenavHeader.length; i++) {
   });
 }
 
-let retrievedData = localStorage.getItem("achorKey");
-let retrievedsideNavSubHeadValue = JSON.parse(retrievedData);
-console.log(retrievedsideNavSubHeadValue[1]);
+// let retrievedData = localStorage.getItem("achorKey");
+// let retrievedsideNavSubHeadValue = JSON.parse(retrievedData);
+// console.log(retrievedsideNavSubHeadValue[1]);
 
-let allAchorValue = [];
-sidenavsubHeader.forEach((eachAnchorTag) => {
-  allAchorValue = [...allAchorValue, eachAnchorTag.innerHTML];
-});
-console.log(allAchorValue);
+// let allAchorValue = [];
+// sidenavsubHeader.forEach((eachAnchorTag) => {
+//   allAchorValue = [...allAchorValue, eachAnchorTag.innerHTML];
 
-let setEachsideNavSubHeadValue = () => {
-  localStorage.setItem("achorKey", JSON.stringify(allAchorValue));
-};
-
-setEachsideNavSubHeadValue();
-
-const eachTag = document.getElementsByTagName("a");
-eachTag.forEach((e) => {
-  console.log(e);
-});
-console.log(eachTag);
-
-// eachAnchorTag.addEventListener("click", (e) => {
-//   for (let i = 0; i < retrievedsideNavSubHeadValue.length; i++) {
-//     if (retrievedsideNavSubHeadValue[i].innerHTML === e.target.innerHTML) {
-//       // if(){}
-//       sidenavsubHeader[i].classList.add = "active";
+//   eachAnchorTag.addEventListener("click", (eachTag) => {
+//     for (let i = 0; i < retrievedsideNavSubHeadValue.length; i++) {
+//       if (retrievedsideNavSubHeadValue[i].innerHTML === e.target.innerHTML) {
+//         sidenavsubHeader[i].classList.add = "active";
+//       }
 //     }
-//     // else {
-
-//     // }
-//     console.log(e.target);
-//   }
+//   });
 // });
+// console.log(allAchorValue);
+
+// let setEachsideNavSubHeadValue = () => {
+//   localStorage.setItem("achorKey", JSON.stringify(allAchorValue));
+// };
+// setEachsideNavSubHeadValue();
+
+// let retrievedData = localStorage.getItem("achorKey");
+// let retrievedsideNavSubHeadValue = JSON.parse(retrievedData);
+// console.log(retrievedsideNavSubHeadValue);
+// let eachClickAchorTagValue;
+// // let allAchorValue = [];
+// sidenavsubHeader.forEach((eachAnchorTag) => {
+//   // allAchorValue = [eachAnchorTag.innerHTML];
+//   console.log(eachAnchorTag);
+
+//   eachAnchorTag.addEventListener("click", (eachTag) => {
+//     // console.log(eachTag.target.innerHTML);
+//     fun(eachTag.target.innerHTML);
+//     eachClickAchorTagValue = eachTag.target.innerHTML;
+//     localStorage.setItem("achorKey", eachTag.target.innerHTML);
+//   });
+// });
+// console.log(allAchorValue);
+
+// localStorage.clear();
+
+// const achorTag = document.getElementsByTagName("a");
+// console.log(achorTag);
+
+// console.log(eachClickAchorTagValue);
+
+// window.addEventListener("DOMContent",()=>{
+//   if(){}
+// });
+
+// let fun = (a) => {
+//   console.log(a);
+// };
+
+const currentLocation = location.href;
+// const sidenavsubHeader = document.querySelectorAll(".sidenav-subheader a");
+const sidenavsubHeader = document.querySelectorAll("a");
+console.log(sidenavsubHeader);
+const sidenavsubHeaderLength = sidenavsubHeader.length;
+console.log(sidenavsubHeaderLength);
+
+for (i = 0; i < sidenavsubHeaderLength; i++) {
+  if (sidenavsubHeader[i].href === currentLocation) {
+    sidenavsubHeader[i].className = "active";
+    sidenavsubHeader[i].parentElement.style.display = "block";
+  }
+}
