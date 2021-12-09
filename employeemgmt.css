@@ -24,7 +24,7 @@
   place-items: center;
 }
 .login-container-section {
-  min-height: 275px;
+  min-height: 265px;
   max-width: 250px;
   background-color: white;
   border-radius: 7px;
@@ -41,26 +41,30 @@
   object-fit: contain;
 }
 
-.login-container-form-section input {
+.login-container-form-section input[type="email"],
+.login-container-form-section input[type="password"] {
   width: 100%;
   height: 2.5em;
   padding: 0.2em;
   border-radius: 7px;
   border: 1px solid var(--border-color);
-  margin-bottom: 1em;
+  margin: 0.5em auto;
   padding: 1em;
 }
-input[type="submit"] {
+.login-container-form-section input[type="submit"] {
   width: 105px;
   height: 2em;
   display: block;
-  margin: 0 auto;
+  margin: 0.5em auto;
   color: var(--bg-color);
   font-weight: bold;
   font-size: 1em;
   background-color: unset;
   padding: unset;
   cursor: pointer;
+  border: 1px solid var(--border-color);
+
+  border-radius: 7px;
 }
 
 input.empty {
@@ -730,13 +734,15 @@ input.empty {
   flex-direction: column;
 }
 .holidaysubmitbtn {
-  font-size: 1.2em !important ;
-  padding: 0.3em 1.5em !important ;
-  height: unset !important;
-  width: unset !important;
-  background-color: #103f6a !important;
-  color: white !important;
-  border: unset !important;
+  font-size: 1.2em;
+  padding: 0.3em 1.5em;
+  height: unset;
+  width: unset;
+  background-color: #103f6a;
+  color: white;
+  border: unset;
+  display: block;
+  margin: 0 auto;
 }
 .holiday-form-section-logo {
   display: grid;
@@ -774,7 +780,7 @@ input.empty {
 @media screen and (min-width: 768px) {
   /*----------------------------------- login page 768px css start herer---------------------------- */
   .login-container-section {
-    min-height: 380px;
+    min-height: 390px;
     max-width: 380px;
     background-color: white;
     border-radius: 7px;
@@ -790,20 +796,21 @@ input.empty {
     height: 92px;
     object-fit: contain;
   }
-  .login-container-form-section input {
+  .login-container-form-section input[type="email"],
+  .login-container-form-section input[type="email"] {
     width: 100%;
     height: 2.5em;
     padding: 0.2em;
     border-radius: 7px;
     border: 1px solid var(--border-color);
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     padding: 1em;
   }
-  input[type="submit"] {
+  .login-container-form-section input[type="submit"] {
     width: 155px;
     height: 45px;
     display: block;
-    margin: 0 auto;
+    margin: 0.5em auto;
     color: var(--bg-color);
     font-weight: bold;
     font-size: 1.5em;
@@ -1384,6 +1391,7 @@ input.empty {
     width: 350px;
     background-color: white;
     padding: 1em;
+    margin-bottom: 0.1em;
   }
   .holiday-form-section label {
     color: var(--bg-color);
@@ -1394,10 +1402,10 @@ input.empty {
     width: 60%;
     font-size: 1em;
     padding: 0.2em;
-    margin-left: 0.5em;
+    margin-left: 0.4em;
   }
   .holiday-form-section input[type="date"] {
-    margin-left: 0.5em;
+    margin-left: 5em;
     font-size: 1em;
     padding: 0.2em;
     width: 55%;
@@ -1408,18 +1416,18 @@ input.empty {
     flex-direction: row;
   }
   .holiday-name {
-    margin-bottom: 1em;
+    margin-bottom: 1.1em;
     display: flex;
     flex-direction: row;
   }
   .holidaysubmitbtn {
-    font-size: 1.2em !important ;
-    padding: 0.3em 1.5em !important ;
-    height: unset !important;
-    width: unset !important;
-    background-color: #103f6a !important;
-    color: white !important;
-    border: unset !important;
+    font-size: 1.2em;
+    padding: 0.3em 1.5em;
+    height: unset;
+    width: unset;
+    background-color: #103f6a;
+    color: white;
+    border: unset;
   }
   .holiday-form-section-logo {
     display: grid;
@@ -1749,11 +1757,49 @@ input.empty {
 @media screen and (min-width: 1400px) {
   /*------------------------------------------------ login page 1400px------------------------------------------- */
   .login-container-section {
-    min-height: 390px;
-    max-width: 380px;
+    min-height: auto;
+    max-width: 330px;
     background-color: white;
     border-radius: 7px;
-    padding: 1.5em;
+    padding: 1em;
+  }
+  .login-container-logo {
+    display: grid;
+    place-items: center;
+    margin: 0.5em auto;
+  }
+  .login-container-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+  .login-container-form-section input[type="email"],
+  .login-container-form-section input[type="password"] {
+    width: 100%;
+    height: 2.5em;
+    padding: 0.2em;
+    border-radius: 7px;
+    border: 1px solid var(--border-color);
+    margin: 0.6em auto;
+    padding: 1em;
+    font-weight: normal;
+  }
+  .login-container-form-section input[type="submit"] {
+    width: 115px;
+    height: 2em;
+    display: block;
+    /* margin: 0.5em auto 0em auto; */
+    margin: 0.5em auto 0.5em auto;
+    color: var(--bg-color);
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: unset;
+    padding: unset;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+
+    border-radius: 7px;
   }
   /*---------------------------------------- userlist 1400px css start here ---------------------------------------------*/
 
@@ -2067,10 +2113,10 @@ input.empty {
     margin-left: 0.5em;
   }
   .holiday-form-section input[type="date"] {
-    margin-left: 0.5em;
+    margin-left: 5.1em;
     font-size: 1em;
     padding: 0.2em;
-    width: 55%;
+    width: 60%;
   }
   .holiday-date {
     margin-bottom: 2em;
@@ -2083,13 +2129,13 @@ input.empty {
     flex-direction: row;
   }
   .holidaysubmitbtn {
-    font-size: 1.2em !important ;
-    padding: 0.3em 1.5em !important ;
-    height: unset !important;
-    width: unset !important;
-    background-color: #103f6a !important;
-    color: white !important;
-    border: unset !important;
+    font-size: 1.2em;
+    padding: 0.3em 1.5em;
+    height: unset;
+    width: unset;
+    background-color: #103f6a;
+    color: white;
+    border: unset;
   }
   .holiday-form-section-logo {
     display: grid;

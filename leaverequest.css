@@ -125,13 +125,15 @@
   padding: 0.2em;
 }
 .leaverequestsubmitbtn {
-  font-size: 1em !important ;
-  padding: 0.3em 1.5em !important ;
-  height: unset !important;
-  width: unset !important;
-  background-color: #103f6a !important;
-  color: white !important;
-  border: unset !important;
+  font-size: 1em;
+  padding: 0.3em 1.5em;
+  height: unset;
+  width: unset;
+  background-color: #103f6a;
+  color: white;
+  border: unset;
+  display: block;
+  margin: 0 auto;
 }
 
 /* leaverequest-calendar-section start*/
@@ -325,15 +327,6 @@
     margin-left: 0.5em;
     font-size: 1em;
     padding: 0.2em;
-  }
-  .leaverequestsubmitbtn {
-    font-size: 1em !important ;
-    padding: 0.3em 1.5em !important ;
-    height: unset !important;
-    width: unset !important;
-    background-color: #103f6a !important;
-    color: white !important;
-    border: unset !important;
   }
 
   /* leaverequest-calendar-section start*/
