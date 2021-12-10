@@ -288,7 +288,7 @@ input.empty {
 
 .userlist-list-header-section {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 20% 45% 35%;
   background-color: var(--bg-color);
   height: 45px;
   color: white;
@@ -300,12 +300,20 @@ input.empty {
 /* userlist-firstrowlist-section start here */
 .userlist-rowlist-section {
   display: grid;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
+  grid-template-columns: 20% 45% 35%;
   color: black;
   height: 45px;
+  /* padding: 0.5em; */
   padding: 0.5em;
   font-size: 0.8em;
   border: 1px solid #bebbbb;
+}
+.userlist-sn-value {
+  /* background-color: turquoise; */
+  display: flex;
+  align-items: center;
+  margin-left: 0.5em;
 }
 .userlist-name-value {
   display: flex;
@@ -328,16 +336,16 @@ input.empty {
 .delete-btn {
   background-color: red;
   border: unset;
-  height: 30px;
-  width: 45px;
+  height: 30px !important;
+  width: 35px !important;
   color: white;
   cursor: pointer;
 }
 .edit-btn {
   background-color: green;
   border: unset;
-  height: 30px;
-  width: 45px;
+  height: 30px !important;
+  width: 35px !important;
   color: white;
   cursor: pointer;
   margin-right: 1em;
@@ -600,19 +608,20 @@ input.empty {
 }
 .employeelist-list-header-section {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 20% 45% 35%;
   background-color: var(--bg-color);
-  color: white;
   height: 45px;
+  color: white;
   padding: 0.8em 0.5em;
   margin-top: 1em;
-  border-radius: 7px 7px 0px 0px;
 }
 .employeelist-rowlist-section {
   display: grid;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
+  grid-template-columns: 20% 45% 35%;
   color: black;
   height: 45px;
+  /* padding: 0.5em; */
   padding: 0.5em;
   font-size: 0.8em;
   border: 1px solid #bebbbb;
@@ -631,7 +640,7 @@ input.empty {
   grid-template-columns: 50% auto;
 }
 
-.delete-btn {
+/* .delete-btn {
   background-color: red;
   border: unset;
   height: 30px;
@@ -647,7 +656,7 @@ input.empty {
   color: white;
   cursor: pointer;
   margin-right: 1em;
-}
+} */
 
 /* employeelist-page-change-section start */
 .employeelist-page-change-section {
@@ -1023,20 +1032,23 @@ input.empty {
   }
   .userlist-list-header-section {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: 10% 25% 25% 28% 17%;
     background-color: var(--bg-color);
     height: 50px;
     color: white;
-    padding: 1em 0.5em;
+    padding: 1em;
     margin-top: 1em;
     border-radius: 7px 7px 0 0;
   }
   .userlist-rowlist-section {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: 10% 25% 25% 28% 17%;
     color: black;
     height: 50px;
-    padding: 0.5em;
+    /* padding: 0.5em; */
+    padding: 0.8em;
     font-size: 0.8em;
     border: 1px solid #bebbbb;
   }
@@ -1062,19 +1074,18 @@ input.empty {
   .delete-btn {
     background-color: red;
     border: unset;
-    height: 35px;
-    width: 60px;
+    height: 30px !important;
+    width: 35px !important;
     color: white;
     cursor: pointer;
   }
   .edit-btn {
     background-color: green;
     border: unset;
-    height: 35px;
-    width: 60px;
+    height: 30px !important;
+    width: 35px !important;
     color: white;
     cursor: pointer;
-    margin-right: 1em;
   }
 
   /* userlist page change section start */
@@ -1297,19 +1308,23 @@ input.empty {
   }
   .employeelist-list-header-section {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: 10% 25% 25% 28% 17%;
     background-color: var(--bg-color);
     height: 50px;
     color: white;
-    padding: 1em 0.5em;
+    padding: 1em;
     margin-top: 1em;
+    border-radius: 7px 7px 0 0;
   }
   .employeelist-rowlist-section {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: 10% 25% 25% 28% 17%;
     color: black;
     height: 50px;
-    padding: 0.5em;
+    /* padding: 0.5em; */
+    padding: 0.8em;
     font-size: 0.8em;
     border: 1px solid #bebbbb;
   }
@@ -1332,7 +1347,7 @@ input.empty {
     grid-template-columns: 50% auto;
   }
 
-  .delete-btn {
+  /* .delete-btn {
     background-color: red;
     border: unset;
     height: 35px;
@@ -1348,7 +1363,7 @@ input.empty {
     color: white;
     cursor: pointer;
     margin-right: 1em;
-  }
+  } */
   /* employee list end here */
 
   .employeelist-user-profile-img {
@@ -1505,21 +1520,34 @@ input.empty {
   }
   .userlist-list-header-section {
     display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
+    /* grid-template-columns: 20% 20% 25% 15% 20%; */
+    /* grid-template-columns: 5% 20% 20% 27% 16% 12%; */
+    grid-template-columns: 5% 18% 20% 27% 16% 14%;
     background-color: var(--bg-color);
     height: 50px;
     color: white;
-    padding: 1em 0.5em;
+    padding: 1em 1em;
     margin-top: 1em;
   }
   .userlist-rowlist-section {
     display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
+    /* grid-template-columns: 20% 20% 25% 15% 20%; */
+    grid-template-columns: 5% 18% 20% 27% 16% 14%;
+    /* grid-template-columns: 16% 16% 16% 16% 16% 16%; */
+
     color: black;
     height: 50px;
-    padding: 0.5em;
+    padding: 1em;
+    /* padding: 1em; */
     font-size: 0.8em;
     border: 1px solid #bebbbb;
+  }
+
+  .userlist-sn-value {
+    display: flex;
+    align-items: center;
+    /* background-color: violet; */
+    margin-left: 0.7em;
   }
   .userlist-name-value {
     display: flex;
@@ -1547,16 +1575,16 @@ input.empty {
   .delete-btn {
     background-color: red;
     border: unset;
-    height: 35px;
-    width: 60px;
+    height: 30px !important;
+    width: 40px !important;
     color: white;
     cursor: pointer;
   }
   .edit-btn {
     background-color: green;
     border: unset;
-    height: 35px;
-    width: 60px;
+    height: 30px !important;
+    width: 40px !important;
     color: white;
     cursor: pointer;
     margin-right: 1em;
@@ -1626,19 +1654,25 @@ input.empty {
   }
   .employeelist-list-header-section {
     display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
+    /* grid-template-columns: 20% 20% 25% 15% 20%; */
+    /* grid-template-columns: 10% 20% 20% 20% 15% 15%; */
+    /* grid-template-columns: 5% 20% 20% 27% 16% 12%; */
+    grid-template-columns: 5% 18% 20% 27% 16% 14%;
     background-color: var(--bg-color);
     height: 50px;
     color: white;
-    padding: 1em 0.5em;
+    padding: 1em 1em;
     margin-top: 1em;
   }
   .employeelist-rowlist-section {
     display: grid;
-    grid-template-columns: 20% 20% 25% 15% 20%;
+    /* grid-template-columns: 20% 20% 25% 15% 20%; */
+    /* grid-template-columns: 10% 20% 20% 20% 15% 15%; */
+    /* grid-template-columns: 5% 20% 20% 27% 16% 12%; */
+    grid-template-columns: 5% 18% 20% 27% 16% 14%;
     color: black;
     height: 50px;
-    padding: 0.5em;
+    padding: 1em;
     font-size: 0.8em;
     border: 1px solid #bebbbb;
   }
@@ -1665,23 +1699,23 @@ input.empty {
     grid-template-columns: 50% auto;
   }
 
-  .delete-btn {
+  /* .delete-btn {
     background-color: red;
     border: unset;
-    height: 35px;
-    width: 60px;
+    height: 30px !important;
+    width: 50px !important;
     color: white;
     cursor: pointer;
   }
   .edit-btn {
     background-color: green;
     border: unset;
-    height: 35px;
-    width: 60px;
+    height: 30px !important;
+    width: 50px !important;
     color: white;
     cursor: pointer;
     margin-right: 1em;
-  }
+  } */
   /* ------------------------------------------employeelist 992px css end here -----------------------------------------*/
 }
 
@@ -1927,6 +1961,62 @@ input.empty {
   .userlist-edit-delete-value {
     color: white;
     width: 60% !important;
+  }
+
+  /* userlist section */
+  .userlist-list-header-section {
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 15% 15%;
+    background-color: var(--bg-color);
+    height: 50px;
+    color: white;
+    padding: 1em 1em;
+    margin-top: 1em;
+  }
+  .userlist-rowlist-section {
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 15% 15%;
+    color: black;
+    height: 50px;
+    padding: 1em;
+    font-size: 0.8em;
+    border: 1px solid #bebbbb;
+  }
+  .delete-btn {
+    background-color: red;
+    border: unset;
+    height: 30px !important;
+    width: 45px !important;
+    color: white;
+    cursor: pointer;
+  }
+  .edit-btn {
+    background-color: green;
+    border: unset;
+    height: 30px !important;
+    width: 45px !important;
+    color: white;
+    cursor: pointer;
+    margin-right: 1em;
+  }
+  /* employelist section */
+  .employeelist-list-header-section {
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 15% 15%;
+    background-color: var(--bg-color);
+    height: 50px;
+    color: white;
+    padding: 1em 1em;
+    margin-top: 1em;
+  }
+  .employeelist-rowlist-section {
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 15% 15%;
+    color: black;
+    height: 50px;
+    padding: 1em;
+    font-size: 0.8em;
+    border: 1px solid #bebbbb;
   }
   /*-------------------------------------- userlist 1400px css end here------------------------------------------------ */
   /*-------------------------------------- employeelist 1400px css start here------------------------------------------------ */
